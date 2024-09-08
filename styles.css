@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.about-us-container {
+    padding: 20px;
+}
+
+.intro-section, .timeline-section, .team-section, .values-section, .contact-us-container {
+    margin-bottom: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.logo-style {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    height: 550px;
+    animation: fadeIn 2s;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-item {
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    animation: slideIn 1s;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    animation: zoomIn 1s;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.value-item {
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+.value-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.contact-us-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us-container input, .contact-us-container textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-us-container button {
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-link {
+    background: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.whatsapp-icon {
+    color: #fff;
+    font-size: 24px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
