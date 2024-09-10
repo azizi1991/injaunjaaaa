@@ -152,16 +152,6 @@ window.addEventListener('scroll', function () {
     }
 }
 
-@media (max-width: 768px) {
-    .logo-style {
-        width: 80px;
-    }
-
-    .coming-soon-text {
-        font-size: 32px;
-    }
-}
-
 
 .intro-section, .timeline-section, .team-section, .values-section, .contact-us-container {
     margin-bottom: 40px;
