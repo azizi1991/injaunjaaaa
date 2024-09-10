@@ -392,3 +392,21 @@ window.addEventListener('scroll', function () {
     color: #cee3e9; /* تغییر رنگ متن به رنگ خاکستری تیره */
 }
 
+/* تنظیمات برای موبایل */
+@media (max-width: 768px) {
+    .logo-style {
+        width: 80px;
+    }
+
+    .coming-soon-text {
+        font-size: 24px; /* اندازه متن کمتر برای موبایل */
+    }
+
+    .contact-item i {
+        font-size: 24px; /* اندازه آیکون‌ها */
+    }
+
+    .contact-item p, .contact-item h3 {
+        font-size: 14px; /* اندازه متن کمتر برای موبایل */
+    }
+}
