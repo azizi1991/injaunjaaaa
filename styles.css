@@ -382,21 +382,37 @@ window.addEventListener('scroll', function () {
     color: #cee3e9; /* تغییر رنگ متن به رنگ خاکستری تیره */
 }
 
-/* تنظیمات برای موبایل */
+/* استایل‌های موبایل */
 @media (max-width: 768px) {
+    .content-overlay {
+        flex-direction: column; /* نمایش عمودی در موبایل */
+        padding: 20px; /* اضافه کردن فضای داخلی */
+        justify-content: center; /* وسط‌چین کردن محتوا به صورت افقی */
+        height: 100vh; /* ارتفاع کامل صفحه نمایش */
+    }
+
     .logo-style {
-        width: 130px;
+        width: 140px; /* اندازه لوگو در موبایل */
+        margin-bottom: 20px; /* فاصله بین لوگو و متن */
+        margin-left: 20PX;
     }
 
     .coming-soon-text {
-        font-size: 16px; /* اندازه متن کمتر برای موبایل */
+        font-size: 25px; /* اندازه متن در موبایل */
     }
 
-    .contact-item i {
-        font-size: 24px; /* اندازه آیکون‌ها */
+    .line {
+        margin: 10px 0; /* فاصله خطوط متن */
     }
+}
+
+
+.line {
+    margin: 5px 0;
+    animation: fadeIn 2s ease-in-out;
+}
 
     .contact-item p, .contact-item h3 {
-        font-size: 14px; /* اندازه متن کمتر برای موبایل */
+        font-size: 14px; /* اندازه متن */
     }
 }
