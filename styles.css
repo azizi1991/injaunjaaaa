@@ -152,6 +152,16 @@ window.addEventListener('scroll', function () {
     }
 }
 
+@media (max-width: 768px) {
+    .logo-style {
+        width: 80px;
+    }
+
+    .coming-soon-text {
+        font-size: 32px;
+    }
+}
+
 
 .intro-section, .timeline-section, .team-section, .values-section, .contact-us-container {
     margin-bottom: 40px;
@@ -381,6 +391,18 @@ window.addEventListener('scroll', function () {
 .contact-item h3 {
     color: #cee3e9; /* تغییر رنگ متن به رنگ خاکستری تیره */
 }
+/* استایل‌های عمومی */
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* نمایش عمودی */
+    align-items: center; /* وسط‌چین کردن عمودی */
+    text-align: center;
+    z-index: 2;
+}
 
 /* استایل‌های موبایل */
 @media (max-width: 768px) {
@@ -410,9 +432,4 @@ window.addEventListener('scroll', function () {
 .line {
     margin: 5px 0;
     animation: fadeIn 2s ease-in-out;
-}
-
-    .contact-item p, .contact-item h3 {
-        font-size: 14px; /* اندازه متن */
-    }
 }
