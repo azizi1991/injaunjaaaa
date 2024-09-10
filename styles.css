@@ -392,7 +392,7 @@ window.addEventListener('scroll', function () {
     }
 
     .logo-style {
-        width: 140px; /* اندازه لوگو در موبایل */
+        width: 190px; /* اندازه لوگو در موبایل */
         margin-bottom: 20px; /* فاصله بین لوگو و متن */
         margin-left: 20PX;
     }
