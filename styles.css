@@ -42,13 +42,12 @@ body {
     background: rgba(0, 0, 0, 0.5); /* برای نیمه‌شفاف کردن بک‌گراند */
 }
 
-.logo-style {
-    max-width: 200px; /* سایز دلخواه لوگو */
-}
+
 
 .coming-soon-text {
     text-align: center;
     margin-top: 20px;
+    size: 20px;
 }
 
 
@@ -66,20 +65,7 @@ body {
     transform: scale(1.1); /* بزرگ‌تر شدن متن */
     transition: all 0.3s ease-in-out;
 }
-// اسکرول برای فعال‌سازی انیمیشن‌ها
-window.addEventListener('scroll', function () {
-    const elements = document.querySelectorAll('.scroll-animate');
-    const windowHeight = window.innerHeight;
 
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        if (elementTop < windowHeight) {
-            element.classList.add('active');
-        } else {
-            element.classList.remove('active');
-        }
-    });
-});
 /* تعریف حالت اولیه برای اسکرول */
 .scroll-animate {
     opacity: 0;
@@ -133,13 +119,14 @@ window.addEventListener('scroll', function () {
 
 .logo-style {
     margin-right: 50px;
-    width: 320px;
     height: auto;
     padding-left: 0;
     margin-right: 20px;
     animation: bounce 2s infinite; 
     display: block;
-    margin-left: -100px;    
+    margin-left: -100px;   
+    max-width: 300px; 
+    margin-left: 20px;
 
 }
 
