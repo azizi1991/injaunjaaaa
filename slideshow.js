@@ -45,4 +45,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // برای اطمینان از اینکه بخش‌های در حال حاضر در نمای صفحه نمایش داده می‌شوند
     handleScrollAnimation();
+
+    
+window.addEventListener('scroll', function () {
+    const elements = document.querySelectorAll('.scroll-animate');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        if (elementTop < windowHeight) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+});
 });
